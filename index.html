@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+html,body{
+height : 100%;
+}
+p{
+margin : 0 auto;
+font-size : 7.5vw;
+text-align : center;
+}
+</style>
+
+<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+
+<script>
+function myFunction() {
+  var words = ["hot","cold","hat","bat","one","two","three"]
+  document.getElementById("demo").innerHTML = words[Math.floor(Math.random() * words.length)];
+}
+</script>
+
+</body>
+</html>
